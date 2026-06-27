@@ -5,13 +5,13 @@ import org.example.enums.VehicleType;
 import org.example.models.ParkingSpot;
 
 public class Bus extends Vehicle{
-    public Bus(String liscensePlate, VehicleType type, int spotNeeded, SpotSize preferredSpotsize) {
-        super(liscensePlate, type, spotNeeded, preferredSpotsize);
+    public Bus(String licensePlate) {
+        super(licensePlate, VehicleType.BUS, 5, SpotSize.LARGE);
     }
 
     @Override
     public boolean canFitInSpot(ParkingSpot spot){
-        return spot.getSize()=SpotSize.LARGE;
+        return spot.getSize()==SpotSize.LARGE;
     }
 
 }

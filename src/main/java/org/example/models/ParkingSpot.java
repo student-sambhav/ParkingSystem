@@ -37,5 +37,4 @@ public class ParkingSpot {
         return isAvailable;
     }
 
-
 }

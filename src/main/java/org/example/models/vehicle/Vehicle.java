@@ -30,7 +30,7 @@ public class Vehicle {
         return type;
     }
 
-    public int getSpotNeeded() {
+    public int getSpotsNeeded() {
         return spotNeeded;
     }
 
